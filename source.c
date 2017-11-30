@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+
 int main()
 {
     int n, i, flag = 0;
@@ -7,17 +7,16 @@ int main()
     printf("Enter a positive integer: ");
     scanf("%d",&n);
 
-    for(i=2; i<=n/2; ++i)
+    for(i = 2; i <= n/2; ++i)
     {
-        // condition for nonprime number
-        if( n%i==0 )
+        if( n % i == 0 )
         {
-            flag=1;
+            flag = 1;
             break;
         }
     }
 
-    if ( flag==0 )
+    if ( flag == 0 )
     {
         printf("%d is a prime number.",n);
     }
